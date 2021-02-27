@@ -4,6 +4,7 @@ html {
   font-size: 62.5%;
 }
 body {
+	position: relative;
   color: #333;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -15,37 +16,80 @@ a:link, a:visited, a:hover, a:active {
   color: #d03c56;
   text-decoration: none;
 }
-
+.container {
+	min-height: 100%;
+}
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
 .wrapper1 {
 	float: left;
 	width: 30%;
+	height: 100%;
+	text-align: center;
+
+}
+.wrapper1 .box {
+	padding: 20px;
+}
+.name {
+	font-size: 2rem;
+}
+.account-icon {
+	font-size: 1.5rem;
+}
+.heading {
+	font-size: 1.8rem;
+}
+.wrapper1 .heading {
+	margin-bottom: 5px;
 }
 .wrapper2 {
 	float: left;
 	width: 70%;
-  position: relative;
+	text-align: center;
+}
+.wrapper2 .heading {
+	padding: 20px 0 ;
 }
 .box {
-	display: block;
 	width: 100%;
 }
 .box img {
-	width: 100%;
+	width: auto;
+	height: 100%;
 }
 .sub-wrapper {
-	display: block;
 	width: 100%;
 }
 .sub-wrapper .box {
-	display: inline;
 	width: 50%;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+.introduction {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .heading {
 	display: block;
 }
 .description {
-	display: block;
+	line-height: 20px;
 }
-footer {
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin-top: 20px;
+	padding: 10px 0;
+	width: 100%;
+	height:30px;
 	text-align: center;
 }

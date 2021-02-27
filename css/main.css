@@ -5,7 +5,8 @@ html {
 }
 body {
 	position: relative;
-  color: #333;
+	color: #444;
+	background-color: #f7f7fd;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
@@ -13,11 +14,15 @@ body {
   box-sizing: border-box;
 }
 a:link, a:visited, a:hover, a:active {
-  color: #d03c56;
+  color: #4e4edc;
   text-decoration: none;
 }
 .container {
 	min-height: 100%;
+}
+.main {
+	width: 80%;
+	margin: 50px 10% 0 10%;
 }
 .clearfix::after {
 	content: '';
@@ -29,7 +34,6 @@ a:link, a:visited, a:hover, a:active {
 	width: 30%;
 	height: 100%;
 	text-align: center;
-
 }
 .wrapper1 .box {
 	padding: 20px;
@@ -38,10 +42,11 @@ a:link, a:visited, a:hover, a:active {
 	font-size: 2rem;
 }
 .account-icon {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 .heading {
 	font-size: 1.8rem;
+	margin: 10px 0;
 }
 .wrapper1 .heading {
 	margin-bottom: 5px;
@@ -50,6 +55,8 @@ a:link, a:visited, a:hover, a:active {
 	float: left;
 	width: 70%;
 	text-align: center;
+	border-left: solid 1px #b8b8f1;
+	padding-left: 30px;
 }
 .wrapper2 .heading {
 	padding: 20px 0 ;
@@ -58,8 +65,8 @@ a:link, a:visited, a:hover, a:active {
 	width: 100%;
 }
 .box img {
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 }
 .sub-wrapper {
 	width: 100%;
@@ -92,4 +99,5 @@ a:link, a:visited, a:hover, a:active {
 	width: 100%;
 	height:30px;
 	text-align: center;
+	background-color: #b8b8f1;
 }

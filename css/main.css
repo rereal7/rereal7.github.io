@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+.wrapper1 {
+	float: left;
+	width: 30%;
+}
+.wrapper2 {
+	float: left;
+	width: 70%;
+  position: relative;
+}
+.box {
+	display: block;
+	width: 100%;
+}
+.box img {
+	width: 100%;
+}
+.sub-wrapper {
+	display: block;
+	width: 100%;
+}
+.sub-wrapper .box {
+	display: inline;
+	width: 50%;
+}
+.heading {
+	display: block;
+}
+.description {
+	display: block;
+}
+footer {
+	text-align: center;
+}

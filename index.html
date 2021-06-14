@@ -1,43 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
-	<title>rereal7 portfolio site</title>
+  <title>rereal7's portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<section class="main clearfix">
-			<div class="wrapper1">
-				<section class="box">
-					<p class="name">古川 卓哉 <a href="https://github.com/rereal7" class="account-icon"><i class="fab fa-github"></i></a></p>
-					<p>Kogawa Takuya</p>
-					<hr class="cp_hr06" />
-				</section>
-				<section class="box">
-					<p class="description">はじめまして、こがわたくやです。ふるかわとよく間違われますが、こがわです。趣味は、FPS/TPS/MMOなどのゲームです。</p>
-				</section>
-			</div>
-			<div class="wrapper2">
-				<h2 class="heading">成果物①　おすすめラーメン教えてbot</h2>
-				<div class="sub-wrapper">
-					<section class="box"><img src="image/ramen.jpg" alt="イメージ画像"></section><section class="box"><p class="description introduction">数種類のおすすめラーメン店のURLの中から、ランダムでURLを返してくれるSlackに対応したbotです。<br>使用方法は、Slackに「/ram」とコマンド入力すると、事前に設定したチャンネルにbotが自動でおすすめラーメン店を投稿してくれます。<br>今回は、好きな食べ物がラーメンなので、自分の趣味に合ったラーメン店の中からおすすめ店を教えてくれるbotを作ってみました。</p></section>
-				</div>
-				<section class="box">
-					<hr class="cp_hr06" />
-					<h3 class="heading">苦労ポイント</h3>
-					<p class="description">まず、Slack APIの実装に手こずりました。初めて実装する内容だったので、試行錯誤しながら進めていきました。ただ、今回触ってみて他のアプリも作成してみたい欲が出て来たので、近日中にはまた何かを作ってみようかなと思っています。そして、その後のGoogle App Scriptの実装ですが、基本的な構文のみを使用していますが、特にbotからランダムに返答を行わせる作業で、コードを書くのに時間を少し取られました。こちらもまだまだ初歩的な内容しかコーディング出来ていないので、もっと複雑で面白い機能を実装できたらと思っています。</p>
-				</section>
-				<section class="box">
-					<hr class="cp_hr06" />
-					<h3 class="heading">使用技術</h3>
-					<p class="description">Slack API / Google App Script</p>
-				</section>
-			</div>
-		</section>
-		<footer class="footer">©︎rereal7 | 2021</footer>
-	</div>
+  <!--header-->
+  <header class="header">
+    <p class="site-title-sub">rereal7's portfolio</p>
+    <h1 class="site-title">No Title</h1>
+    <p class="site-description">Not any color yet</p>
+  </header>
+
+  <!--about section-->
+  <section class="about">
+    <h2 class="heading">About Me</h2>
+    <p class="text">初めまして、古川　卓哉です。ご覧いただきありがとうございます。</p>
+    <p class="text">学習のまとめとして作成していますので、見てもらえると嬉しいです。</p>
+  </section>
+
+  <!--works section-->
+  <section class="works">
+    <h2 class="heading">Works</h2>
+
+    <div class="works-wrapper">
+      <div class="work-box">  
+        <img class="work-image" src="images/tree.jpg" alt="制作事例１">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              １つ目の事例が入ります<br>
+              １つ目の事例が入ります<br>
+              １つ目の事例が入ります<br>
+              使用技術：xxx, xxx, xxx<br>
+              <a href="https://laravel-tutorial-practice.herokuapp.com" class="button button-ghost">button</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box">
+        <img class="work-image" src="images/sky.jpg" alt="制作事例１">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              ２つ目の事例が入ります<br>
+              ２つ目の事例が入ります<br>
+              ２つ目の事例が入ります<br>
+              使用技術：xxx, xxx, xxx<br>
+              <a href="https://udemy-laravel-app.herokuapp.com/" class="button button-ghost">button</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box">
+        <img class="work-image" src="images/lake.jpg" alt="制作事例１">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text">
+              ３つ目の事例が入ります<br>
+              ３つ目の事例が入ります<br>
+              ３つ目の事例が入ります<br>
+              使用技術：xxx, xxx, xxx<br>
+              <a href="https://nisetter.herokuapp.com/" class="button button-ghost">button</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--skills section-->
+  <section class="skills">
+    <h2 class="heading">My Skills</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">
+        <i class="skill-icon fas fa-chalkboard-teacher
+        "></i>
+        <div class="skill-title">Teaching</div>
+        <p class="skill-text">
+          文章1<br>
+          文章1<br>
+          文章1
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fab fa-php"></i>
+        <div class="skill-title">PHP</div>
+        <p class="skill-text">
+          文章2<br>
+          文章2<br>
+          文章2
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fab fa-laravel"></i>
+        <div class="skill-title">Laravel</div>
+        <p class="skill-text">
+          文章3<br>
+          文章3<br>
+          文章3
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--story section-->
+  <section class="story">
+    <h2 class="heading">Story</h2>
+    <p class="text">苦労した話</p>
+    <p class="text">今後の展望</p>
+  </section>
+
+  <!--footer-->
+  <footer class="footer">
+    <p class="copyright">©︎rereal7 | 2021</p>
+  </footer>
 </body>
 </html>

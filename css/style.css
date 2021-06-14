@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url('../images/bg.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+
+}
+
+/* header */
+.header {
+  padding: 170px 30px 80px;
+  color: #000;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: rgb(0, 0, 0);
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 6.6rem;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: rgb(39, 39, 39);
+  font-size: 1.6rem;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* about */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+
+.heading::before {
+  bottom: 3px;
+}
+
+.text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+/* works */
+.works {
+  background-color: #383634;
+  padding: 80px 0;
+}
+
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+
+.work-box {
+  position: relative;
+  display: table-cell;
+  overflow: hidden;
+}
+
+.work-box img {
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.work-box:nth-child(odd) img {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+
+.work-box:nth-child(even) img {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
+.work-box:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 60%;
+}
+
+.work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url('../images/tree.jpg') no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+}
+
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.work-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+}
+
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0;
+}
+
+/* skills */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.skill-box {
+  display: table-cell;
+}
+
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: rgb(31, 164, 173);
+  font-size: 8rem;
+  line-height: 142px;
+}
+
+.fa-php {
+  color: #8892be;
+}
+
+.fa-laravel {
+  color: #f55247;
+}
+
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+
+.story {
+  /* background-color: #383634; */
+  padding: 80px 0;
+  color: #000;
+}
+
+/* footer */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+/* メディアクエリ */
+@media (max-width: 1024px) {
+  background-image: none;
+}
+@media (max-width: 768px) {
+  /* header */
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  .header {
+    padding-top: 60px;
+  }
+
+  .button:hover {
+    opacity: 1;
+  }
+
+  /* about */
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    line-height: 1.8rem;
+  }
+
+  /* works */
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+
+  .work-image {
+    display: none;
+  }
+
+  .work-description {
+    position: relative;
+  }
+
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+  }
+
+  /* skills */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+
+  .skill-box {
+    margin: 40px auto;
+  }
+
+  .skill-text {
+    margin: 0;
+  }
+}

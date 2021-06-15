@@ -253,6 +253,7 @@ body {
   line-height: 2;
 }
 
+/* story */
 .story {
   /* background-color: #383634; */
   padding: 80px 0;
@@ -264,6 +265,12 @@ body {
   padding: 12px 0;
   font-size: 1.3rem;
   color: #000;
+}
+
+.footer-link {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 /* メディアクエリ */
